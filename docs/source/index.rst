@@ -25,6 +25,12 @@ Alejandro que es el mejor
    install
    example
 
+Documentación automática
+========================
+
+.. automodule:: modeltools.preprocessing
+   :members:
+
 
 
 Indices and tables
