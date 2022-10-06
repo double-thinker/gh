@@ -13,7 +13,7 @@ def test_get_numerical_features_simple():
     # assert es "como un if" pero que falla si la condición
     # es falsa. Esto es ideal para los tests.
 
-    assert get_numerical_features(df) == ["numericsssssa"]
+    assert get_numerical_features(df) == ["numerica"]
 
 
 def test_get_numerical_features_empty():
