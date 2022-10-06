@@ -25,7 +25,8 @@ jobs: # Solo vamos a crear uno
           path: jest-junit.xml
       - uses: dorny/test-reporter@v1
         with:
-          artifact: test-results            # artifact name
+          path: jest-junit.xml
+          #artifact: test-results            # artifact name
           name: JEST Tests                  # Name of the check run which will be created
           path: '*.xml'                     # Path to test results (inside artifact .zip)
           reporter: jest-junit              # Format of test results
