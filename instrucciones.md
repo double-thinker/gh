@@ -1,9 +1,12 @@
 # Los que no tengáis poetry
+
 1. pip install poetry
 2. conda install -c conda-forge poetry
 
 # Creamos plantilla
+
 Ejecutar poetry init
+
 1. Package name: modeltools
 2. Version: ENTER
 3. Description: ENTER
@@ -15,6 +18,7 @@ Ejecutar poetry init
 9. Confirm. YES
 
 # Crear paquete / docs / tests
+
 Ejercicio: Crear tres carpetas:
 A) modeltools
 B) docs
@@ -24,14 +28,18 @@ C) tests
 - poetry build
 
 # Declarar dependencia
+
 1. poetry add numpy
-2. Comrpobais que en pyproject aparece numpy
+2. Comprobais que en pyproject aparece numpy
 3. git add de:
+
 - pyproject.toml
 - poetry.lock
 - preprocessing.py
+
 4. commit y push
 
 # Distribuir el paquete
+
 - cambio de versión a la 0.1.1
 - poetry build
