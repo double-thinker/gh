@@ -10,12 +10,6 @@ Modeltools
 
 Modeltools es lo más
 
-.. autosummary::
-   :toctree: _autosummary
-   :recursive:
-
-   modeltools
-
 
 Indices and tables
 ==================
