@@ -17,7 +17,7 @@ jobs: # Solo vamos a crear uno
       - name: Install dependencies
         run: poetry install
       - name: Testing
-        run: poetry run pytest --junitxml=jest-junit.xml --cov=modeltools --cov-report=lcov
+        run: poetry run pytest --junitxml=jest-junit.xml --cov=modeltools --cov-report=lcov --cov-report=xml
       - uses: actions/upload-artifact@v2  # upload test results
         if: success() || failure()        # run this step even if previous step failed
         with:
