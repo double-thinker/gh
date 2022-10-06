@@ -15,8 +15,9 @@ author = 'Alejandro'
 
 
 extensions = [
-    'sphinx.ext.doctest',
-    'autoapi.extension'
+    'sphinx.ext.autodoc',
+    'autoapi.extension',
+    'sphinx.ext.viewcode'
 ]
 
 templates_path = ['_templates']
