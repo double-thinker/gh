@@ -1,8 +1,8 @@
 name: Building # Nombre del workflow
-on:
-  push:
-    tags:
-      - "v*.*.*" # Este on solo se ejecuta cuando hay etiqueta
+on: [push]
+#  push:
+#    tags:
+#      - "v*.*.*" # Este on solo se ejecuta cuando hay etiqueta
 
 jobs: # Solo vamos a crear uno
   building:
@@ -17,7 +17,12 @@ jobs: # Solo vamos a crear uno
       - name: Install dependencies
         run: poetry install
       - name: Testing
-        run: poetry run pytest
+        run: poetry run pytest --junitxml=jest-junit.xml --cov=modeltools --cov-report=xml
+      - uses: actions/upload-artifact@v2  # upload test results
+        if: success() || failure()        # run this step even if previous step failed
+        with:
+          name: test-results
+          path: jest-junit.xml
       - run: poetry build # Ejecuto un comando de consola en el repo.
       - name: Publish to GH Releases
         uses: softprops/action-gh-release@v1
