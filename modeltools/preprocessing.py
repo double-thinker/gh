@@ -13,9 +13,10 @@ def get_numerical_features(df):
     :type df: pandas.DataFrame
     :return: lista de nombres de columnas
     :rtype: List[str]
-
+    
     >>> print(1+1)
     2
+    
     """
     return list(df.select_dtypes(include=[np.number]).columns)
 

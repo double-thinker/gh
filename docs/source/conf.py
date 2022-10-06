@@ -1,15 +1,3 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
-project = 'modeltools'
-copyright = '2022, Alejandro'
-author = 'Alejandro'
-
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
@@ -17,7 +5,6 @@ author = 'Alejandro'
 extensions = [
     'sphinx.ext.autodoc',
     'autoapi.extension',
-    'sphinx.ext.viewcode'
 ]
 
 templates_path = ['_templates']
